@@ -41,13 +41,13 @@ namespace Test
 		if (same)
 		{
 			SetConsoleTextAttribute(handle, 10);
-			std::cout << message << result << ") status: OK\n";
+			std::cout << message << result << " status: OK\n";
 			SetConsoleTextAttribute(handle, attributes);
 		}
 		else
 		{
 			SetConsoleTextAttribute(handle, 12);
-			std::cout << message << result << " expected: " << expected << ") status: FAIL\n";
+			std::cout << message << result << " expected: " << expected << " status: FAIL\n";
 			SetConsoleTextAttribute(handle, attributes);
 		}
 
